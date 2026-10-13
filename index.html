@@ -60,7 +60,7 @@ h1{font-size:clamp(2.5rem,6.3vw,5.1rem);font-stretch:88%}
 .browser{background:var(--surface);border:1.5px solid var(--ink);border-radius:14px;overflow:hidden;box-shadow:10px 10px 0 var(--green)}
 .tabs{display:flex;gap:2px;background:var(--chrome);padding:8px 8px 0;overflow-x:auto;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tabs button{flex:0 1 210px;min-width:128px;text-align:left;font:500 .86rem var(--body);color:var(--muted);background:transparent;border:0;border-radius:9px 9px 0 0;padding:9px 14px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tabs button{flex:0 1 190px;min-width:120px;text-align:left;font:500 .86rem var(--body);color:var(--muted);background:transparent;border:0;border-radius:9px 9px 0 0;padding:9px 14px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .tabs button:hover{background:color-mix(in srgb,var(--surface) 55%,transparent)}
 .tabs button[aria-selected="true"]{background:var(--surface);color:var(--ink);font-weight:600}
 .address{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line);position:relative}
@@ -162,6 +162,7 @@ footer{padding-block:28px 44px;color:var(--muted);font-size:.9rem}
       <button role="tab" id="t2" aria-selected="false" aria-controls="panel" tabindex="-1">Pixel Tribes</button>
       <button role="tab" id="t3" aria-selected="false" aria-controls="panel" tabindex="-1">EV Spare Parts</button>
       <button role="tab" id="t4" aria-selected="false" aria-controls="panel" tabindex="-1">Eden View Garage</button>
+      <button role="tab" id="t5" aria-selected="false" aria-controls="panel" tabindex="-1">Rent Cafe</button>
     </div>
     <div id="panel" role="tabpanel" aria-labelledby="t0">
       <div class="address">
@@ -185,12 +186,17 @@ footer{padding-block:28px 44px;color:var(--muted);font-size:.9rem}
 
   <section class="section" id="work">
     <h2>Client work</h2>
-    <p class="lead">Sites running on the client's own domain. Each line says what my part was.</p>
+    <p class="lead">Live sites for real businesses. Each line says what my part was.</p>
     <ul class="ledger">
       <li>
         <img src="assets/work/innerrealm.webp" alt="" width="800" height="500" loading="lazy">
         <div><h3><a href="https://www.machineworld.io/inner-realm/">Inner Realm</a></h3><p class="what">AI-native music app. Front end: player, track generation, chat.</p></div>
         <div class="side"><a href="https://www.machineworld.io/inner-realm/">machineworld.io</a><br>React, Vite, Web Audio, Firebase</div>
+      </li>
+      <li>
+        <img src="assets/work/rentcafe.webp" alt="" width="800" height="500" loading="lazy">
+        <div><h3><a href="https://rentcafe.netlify.app/">Rent Cafe Gampaha</a></h3><p class="what">Coffee machine rental business. Built for search: Lighthouse SEO 100, accessibility 100, structured data, 357 KB page.</p></div>
+        <div class="side"><a href="https://rentcafe.netlify.app/">rentcafe.netlify.app</a><br>HTML, CSS, vanilla JS, local SEO</div>
       </li>
       <li>
         <img src="assets/work/skillsup.webp" alt="" width="800" height="500" loading="lazy">
@@ -233,13 +239,13 @@ footer{padding-block:28px 44px;color:var(--muted);font-size:.9rem}
 
   <section class="section" id="builds">
     <h2>UI builds</h2>
-    <p class="lead">Front ends built from a design. Rent Cafe is a finished site; the others have no back end connected yet.</p>
+    <p class="lead">Front ends built from a design. No back end connected yet.</p>
     <ul class="builds">
-      <li><a href="https://rentcafe.netlify.app/"><img src="assets/work/rentcafe.webp" alt="" width="800" height="500" loading="lazy"><b>Rent Cafe Gampaha</b><span>Plain HTML, CSS and JavaScript. 357 KB page.</span></a></li>
       <li><a href="https://bizzbuzz-vue.netlify.app/"><img src="assets/work/bizzbuzz.webp" alt="" width="800" height="500" loading="lazy"><b>BizzBuzz news portal</b><span>Vue 3, Vue Router, Vite</span></a></li>
       <li><a href="https://prodigit0.netlify.app/"><img src="assets/work/clinic.webp" alt="" width="800" height="500" loading="lazy"><b>Surgeon's clinic site</b><span>React, Vite, Swiper</span></a></li>
       <li><a href="https://ksn-miyuru.netlify.app"><img src="assets/work/ksn.webp" alt="" width="800" height="500" loading="lazy"><b>KSN Catering</b><span>Bootstrap, jQuery, Owl Carousel</span></a></li>
       <li><a href="https://lms-miyuru.netlify.app"><img src="assets/work/lms.webp" alt="" width="800" height="500" loading="lazy"><b>E-learning platform</b><span>Bootstrap, GSAP, AOS</span></a></li>
+      <li><a href="https://solar-boat-website.netlify.app"><img src="assets/work/solar.webp" alt="" width="800" height="500" loading="lazy"><b>SunSail Solar Boats</b><span>Bootstrap, jQuery, AOS</span></a></li>
       <li><a href="https://atdigital0.netlify.app/"><img src="assets/work/atdigital.webp" alt="" width="800" height="500" loading="lazy"><b>AT Digital</b><span>React, Bootstrap</span></a></li>
     </ul>
   </section>
@@ -257,10 +263,9 @@ footer{padding-block:28px 44px;color:var(--muted);font-size:.9rem}
     </div>
 
     <dl class="history">
-      <div><dt>Jul 2024 to now</dt><dd><b>Frontend Engineer, E Wings Solution</b><span>Websites and Angular and TypeScript applications for a US-based software company. WordPress in PHP, custom Duda CMS widgets.</span></dd></div>
-      <div><dt>Dec 2023 to Jul 2024</dt><dd><b>Associate Frontend Engineer, E Wings Solution</b><span>Joined the front-end team, promoted after eight months.</span></dd></div>
+      <div><dt>Dec 2023 to now</dt><dd><b>Frontend Engineer, E Wings Solution</b><span>Websites and Angular and TypeScript applications for a US-based software company. WordPress in PHP, custom Duda CMS widgets.</span></dd></div>
       <div><dt>Nov 2024 to Apr 2025</dt><dd><b>Front-End Developer (part-time), Vincentius Technology</b><span>WooCommerce stores with payment, SMS and delivery APIs. React, Vue and Laravel front ends.</span></dd></div>
-      <div><dt>Jun 2022 to Dec 2023</dt><dd><b>Junior Web Developer, Dimensions IT and JP Web Solutions (UK)</b><span>Hand-coded PHP sites for UK small businesses, including leading the Rosebank Sports front end. SEO, Google Analytics API, hosting and launch testing.</span></dd></div>
+      <div><dt>Jun 2022 to Dec 2023</dt><dd><b>Junior Web Developer, Dimensions IT and JP Web Solutions (UK)</b><span>Hand-coded PHP sites for UK small businesses. SEO, Google Analytics API, hosting and launch testing.</span></dd></div>
     </dl>
 
     <div class="tools">
@@ -293,7 +298,8 @@ footer{padding-block:28px 44px;color:var(--muted);font-size:.9rem}
     {d:'skillsuptuition.com',u:'https://skillsuptuition.com/',i:'skillsup',t:'SkillsUp Tuition',w:'Online tuition provider in Singapore. Parents book and pay for courses through the site.',s:'WordPress, WooCommerce, Elementor, Astra'},
     {d:'pixeltribes.com',u:'https://pixeltribes.com/',i:'pixeltribes',t:'Pixel Tribes',w:'Digital agency site. I built the front end and fitted it to a Laravel CMS made by a back-end developer.',s:'Laravel Blade, GSAP ScrollTrigger, Swiper, Isotope'},
     {d:'electricvehiclespareparts.in',u:'https://electricvehiclespareparts.in/',i:'evparts',t:'EV Spare Parts India',w:'A marketplace where suppliers list electric vehicle parts and buyers contact them directly.',s:'WordPress child theme, WooCommerce, Elementor'},
-    {d:'edenviewgarage.co.uk',u:'https://www.edenviewgarage.co.uk/',i:'edenview',t:'Eden View Garage',w:'Car repair garage in Penrith, UK. Hand-coded from the design file, one of about a dozen UK business sites.',s:'PHP, Bootstrap, jQuery, GSAP'}
+    {d:'edenviewgarage.co.uk',u:'https://www.edenviewgarage.co.uk/',i:'edenview',t:'Eden View Garage',w:'Car repair garage in Penrith, UK. Hand-coded from the design file, one of about a dozen UK business sites.',s:'PHP, Bootstrap, jQuery, GSAP'},
+    {d:'rentcafe.netlify.app',u:'https://rentcafe.netlify.app/',i:'rentcafe',t:'Rent Cafe Gampaha',w:'Coffee machine rental business. Built for search: Lighthouse SEO 100, accessibility 100, structured data, 357 KB page.',s:'HTML, CSS, vanilla JavaScript, WebP, local SEO'}
   ];
   var tabs=[].slice.call(document.querySelectorAll('[role=tab]')),view=document.getElementById('view'),bar=document.getElementById('bar'),
       $=function(id){return document.getElementById(id)},imgs=[view.querySelector('img')];
